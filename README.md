@@ -6,7 +6,7 @@ Sample usage:(XAML)
 
 ```xml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-x:Class="test.ListPage" xmlns:Controls="clr-namespace:test;assembly=test"> 
+x:Class="test.ListPage" xmlns:Controls="clr-namespace:HorizontalList;assembly=HorizontalList"> 
 
 <Controls:HorizontalListView ItemsSource="{Binding Categories}" ListOrientation="Horizontal"> 
   <Controls:HorizontalListView.ItemTemplate> 
@@ -14,5 +14,5 @@ x:Class="test.ListPage" xmlns:Controls="clr-namespace:test;assembly=test">
     <Label Text="{Binding Name}" Grid.Row="0" YAlign="Center" /> 
     </DataTemplate> 
   </Controls:HorizontalListView.ItemTemplate> 
-  </Controls:myControl>
+  </Controls:HorizontalListView>
 </ContentPage>
